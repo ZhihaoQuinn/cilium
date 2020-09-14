@@ -3,6 +3,8 @@
 
 UTC_DATE=$(shell date -u "+%Y-%m-%d")
 
+BASE_IMAGE ?= "strip"
+
 docker-cilium-image-for-developers:
 	# DOCKER_BUILDKIT allows for faster build as well as the ability to use
 	# a dedicated dockerignore file per Dockerfile.
